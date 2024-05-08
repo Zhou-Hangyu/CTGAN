@@ -4,6 +4,13 @@ ICIP 2022: CTGAN : Cloud Transformer Generative Adversarial Network \
 Authors:
 [Gi-Luen Huang](r09942171@ntu.edu.tw), [Pei-Yuan Wu](https://www.ee.ntu.edu.tw/profile1.php?teacher_id=24038)
 
+## UPDATE TO THE CODE [ALLCLEAR]
+
+### Processing pre-trained model
+1. Download the model with ```gdown https://drive.google.com/uc?id=1-hDX9ezWZI2OtiaGbE8RrKJkN1X-ZO1P``` (7.9GB)
+2. Unzip it with `7z CTGAN.zip` (p7zip Version 16.02)
+3. Move `G_epoch97_PSNR21.259-002.pth` (2.40GB) to `allclear/baselines/CTGAN/Pretrain/G_epoch97_PSNR21.259-002.pth`
+
 ## Proposed model
 ### Generator
 The overall structure of our proposed CTGAN is illustrated below. We focus more on the design of the feature extractor and processing of the sequential features. We refer to the conformer module, the modified version of Transformer, intending to make the downsampled sequential features find the most critical representation.
