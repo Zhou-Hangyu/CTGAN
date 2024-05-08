@@ -1,6 +1,13 @@
 import torch.nn as nn
 import torch
 import math
+
+import sys, os
+if "ck696" in os.getcwd():
+    sys.path.append("/share/hariharan/ck696/allclear/baselines/CTGAN")
+else:
+    sys.path.append("/share/hariharan/cloud_removal/allclear/baselines/CTGAN")
+
 from model.model_component import *
 from model.FE import Feature_Extractor
 
